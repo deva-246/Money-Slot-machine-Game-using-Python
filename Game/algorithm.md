@@ -15,11 +15,17 @@
    6.1 Declare global variables named **ROWS , COLS** with a value of **3.**
 
    6.2 Specify the number of symbols a row must hold. Do this with a help of a **dictionary** datatype as below,
-       symbol_count ={
+
+   symbol_count ={
+   
               "*" : 2,
+   
               "&" : 4,
+   
               "^" : 6,
+   
               "@" : 8
+   
           }
 
      6.3 define a method **get_slot_machine_spin(rows,cols,symbols)** , where we generate what symbols are going to be in each column     
