@@ -32,9 +32,9 @@
          based on the frequency we have. For each column symbols will be randomly generated is the core idea of this method.
 
 
-         6.3.1 Easiest way to randomly select the symbols for each column is by creating a **list** , that contains all of the different                  values we possibly could select from.
+    6.3.1 Easiest way to randomly select the symbols for each column is by creating a **list** , that contains all of the different                  values we possibly could select from.
 
-         6.3.2 Now we can choose and value, and once it's chosen it's removed from the list and then we choose again.
+    6.3.2 Now we can choose and value, and once it's chosen it's removed from the list and then we choose again.
 
                 all_symbols = []
    
