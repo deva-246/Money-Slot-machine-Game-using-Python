@@ -128,7 +128,65 @@
          
              return winnings,winning_lines
 
-   7. 
+
+ 7. Define a method named **spin()** to work on the balance with deposit if we win or lose with respective results!
+
+             def spin(balance):
+    
+             lines = get_nol()
+    
+         
+             # check if there is sufficient deposit for bet
+    
+             while True:
+    
+                 bet = get_bet()
+         
+                 total_bet = bet * lines
+         
+                 if total_bet > balance:
+    
+                     print(f"You dont have the sufficient bet amount, as your current balance is only ${balance}")
+    
+                 else:
+    
+                     break
+         
+             print(f"You are betting ${bet} on {lines} lines. Total Bet = ${total_bet}")
+         
+             slots = get_slot_machine_spin(ROWS, COLS, symbol_count)
+         
+             print_slot_machine(slots)
+         
+             winnings, winning_lines = check_winnings(slots, lines, bet, symbol_values)
+         
+             print(f"You won ${winnings}.")
+    
+             print(f"You won on lines :", *winning_lines)
+         
+             return winnings - total_bet
+
+ 
+ 
+ 8. Now call the methods inside **main()**,
+
+          balance = deposit()
+    
+           while True:
+    
+           print(f"Curent balance is ${balance}")
+    
+           answer = input("Press enter to play (q to quit).")
+    
+           if answer == "q":
+    
+               break
+    
+           balance += spin(balance)
+
+   
+       print(f"You left with ${balance}")
+
 
 
 
