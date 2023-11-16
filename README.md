@@ -1,4 +1,4 @@
-# Money-Spin-Game-using-Python
+# Money-Slot-machine-game-using-Python
 
 ## Prerequisites
 
