@@ -16,7 +16,7 @@
 
    6.2 Specify the number of symbols a row must hold. Do this with a help of a **dictionary** datatype as below,
 
-   symbol_count ={
+      symbol_count ={
    
               "*" : 2,
    
