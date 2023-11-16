@@ -14,7 +14,7 @@
 
    6.1 Declare global variables named **ROWS , COLS** with a value of **3.**
 
-   6.2 Specify the number of symbols a row must hold. Do this with a help of a **dictionary** datatype as below,
+   6.2 Specify the number of symbols. Do this with a help of a **dictionary** datatype as below,
 
       symbol_count ={
    
@@ -31,9 +31,9 @@
      6.3 define a method **get_slot_machine_spin(rows,cols,symbols)** , where we generate what symbols are going to be in each column    
         based on the frequency we have. For each column symbols will be randomly generated is the core idea of this method.
 
-        6.3.1 Easiest way to randomly select the symbols for each column is by creating a **list** , that contains all of the different                  values we possibly could select from.
+     6.a Easiest way to randomly select the symbols for each column is by creating a **list** , that contains all of the different                  values we possibly could select from.
 
-        6.3.2 Now we can choose and value, and once it's chosen it's removed from the list and then we choose again.
+     6.b Now we can choose and value, and once it's chosen it's removed from the list and then we choose again.
 
                 all_symbols = []
    
@@ -67,6 +67,73 @@
 
             
                 return columns
+
+   6.4 Now to print the above symbol selection in a presentable way create a method named **print_slot_machine()**
+
+         def print_slot_machine(columns):
+
+          #Transpose of a matrix
+   
+          for row in range(len(columns[0])):
+   
+           for i,column in enumerate(columns):
+   
+               if i != len(columns) -1:
+   
+                   print(column[row],end=" | ")
+   
+               else:
+   
+                   print(column[row],end="")
+   
+           print()
+
+    6.5 now create a method named **check_winings(columns, lines, bet, values)** and define the logic to check whether the symbols looks         same . Declare the values of the symbols,
+
+               symbol_values ={
+            
+                      "*" : 5,
+            
+                      "&" : 4,
+            
+                      "^" : 3,
+            
+                      "@" : 2
+            
+                  }
+         
+             def check_winnings(columns,lines,bet,values):
+            
+             winnings = 0
+            
+             winning_lines = []
+            
+         
+             for line in range(lines):
+            
+                 symbol =  columns[0][line]
+            
+                 for column in columns:
+            
+                     symbol_to_check = column[line]
+            
+                     if symbol != symbol_to_check:
+            
+                         break
+            
+                 else:
+            
+                     winnings += values[symbol] * bet
+            
+         
+             return winnings,winning_lines
+
+   7. 
+
+
+
+
+
              
 
    
