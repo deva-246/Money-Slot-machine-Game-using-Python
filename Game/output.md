@@ -1,5 +1,7 @@
 # Outputs
 
+The below results represents the working of the money slot machine, with necessary examples.
+
 ## Result when you win the bet
 
 
