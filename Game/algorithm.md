@@ -10,4 +10,22 @@
 
 5. To run the slot machine Import a module named **random**, because we need to generate the slot machine values in a random manner.
 
-6. 
+6. A slot machine with a **3*3 slots** lines is going to be created, if we get 3 same values in a row then **You win!** is the concept that is going to be implemented.
+
+   6.1 Declare global variables named **ROWS , COLS** with a value of **3.**
+
+   6.2 Specify the number of symbols a row must hold. Do this with a help of a **dictionary** datatype as below,
+       symbol_count ={
+              "*" : 2,
+              "&" : 4,
+              "^" : 6,
+              "@" : 8
+          }
+
+     6.3 define a method **get_slot_machine_spin(rows,cols,symbols)** , where we generate what symbols are going to be in each column     
+         based on the frequency we have. For each column symbols will be randomly generated is the core idea of this method.
+
+     6.4 
+
+   
+ 
