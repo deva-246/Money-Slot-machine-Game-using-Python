@@ -170,6 +170,8 @@
  
  8. Now call the methods inside **main()**,
 
+          def main():
+    
           balance = deposit()
     
            while True:
