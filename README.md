@@ -3,8 +3,11 @@
 ## Prerequisites
 
     1. Python - Any IDE (VS code, Pycharm)
+    
     2. Random package installation
+    
     3. Basic understanding of python functions
+    
     4. Familiarity with Global variables, Lists, Dictionary 
 
 ## Python
