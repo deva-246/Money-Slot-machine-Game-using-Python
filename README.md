@@ -1,5 +1,8 @@
 # Money-Slot-machine-game-using-Python
 
+![image](https://github.com/deva-246/Money-Slot-machine-Game-using-Python/assets/75877347/1321765a-0e83-43af-ba42-7d5eeefde8e2)
+
+
 ## Prerequisites
 
     1. Python - Any IDE (VS code, Pycharm)
