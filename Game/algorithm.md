@@ -31,7 +31,44 @@
      6.3 define a method **get_slot_machine_spin(rows,cols,symbols)** , where we generate what symbols are going to be in each column     
          based on the frequency we have. For each column symbols will be randomly generated is the core idea of this method.
 
-     6.4 
+
+         6.3.1 Easiest way to randomly select the symbols for each column is by creating a **list** , that contains all of the different                  values we possibly could select from.
+
+         6.3.2 Now we can choose and value, and once it's chosen it's removed from the list and then we choose again.
+
+                all_symbols = []
+   
+                # a and 2 - sym, symcount
+   
+                for symbol,symbol_count in symbols.items():
+   
+                    for _ in range(symbol_count):
+   
+                        all_symbols.append(symbol)
+   
+            
+                columns = []
+   
+                for col in range(cols):
+   
+                    column = []
+   
+                    current_symbols = all_symbols[:]
+   
+                    for row in range(rows):
+   
+                        value =  random.choice(current_symbols)
+   
+                        current_symbols.remove(value)
+   
+                        column.append(value)
+   
+            
+                    columns.append(column)
+
+            
+                return columns
+             
 
    
  
