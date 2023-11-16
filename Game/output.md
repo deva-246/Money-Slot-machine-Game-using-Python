@@ -3,11 +3,17 @@
 ## Result when you win the bet
 
 
+![image](https://github.com/deva-246/Money-Slot-machine-Game-using-Python/assets/75877347/2277d064-7de3-4e7a-8446-16f49ec1a4b4)
+
+
+
+
 
 ## Result when you lose the bet
 
 
-![image](https://github.com/deva-246/Money-Slot-machine-Game-using-Python/assets/75877347/8dcaac7e-3791-48b4-bc41-8d92a4cf0f69)
+![image](https://github.com/deva-246/Money-Slot-machine-Game-using-Python/assets/75877347/ccc21827-df63-4a72-9b53-edd43bbfa715)
+
 
 
 ## Result when the betting process continues upto the user's wish
